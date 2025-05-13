@@ -69,8 +69,10 @@ def convert_row_to_heroes(row: dict) -> dict:
             "role":      row.get("Role", ""),
             "specialty": row.get("Specialty", ""),
             "lane_recc": row.get("Lane_Recc", ""),
-            "icon":      row.get("Iconhero", ""),
-            "full":      row.get("Imagehero", "")
+            # "icon":      row.get("Iconhero", ""),
+            # "full":      row.get("Imagehero", "")
+            "icon":      row.get("Icon_Hero_URL", ""),
+            "full":      row.get("Image_Hero_URL", "")
         },
         "price": {
             "battle_points":  row.get("Price_Battle_Points", ""),
